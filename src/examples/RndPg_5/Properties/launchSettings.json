@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "RndPg_5": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "Development"
+      },
+      "remoteDebugEnabled": false
+    }
+  }
+}
