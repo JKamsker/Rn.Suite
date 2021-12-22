@@ -9,5 +9,20 @@ namespace Rnd.Lib.Extensions
         {
             return enumerable ?? Enumerable.Empty<T>();
         }
+
+#nullable enable
+
+        public static IEnumerable<string> NotNullOrEmpty(this IEnumerable<string?> enumerable)
+        {
+            foreach (var item in enumerable)
+            {
+                if (!string.IsNullOrEmpty(item))
+                {
+                    yield return item;
+                }
+            }
+        }
+
+#nullable disable
     }
 }
