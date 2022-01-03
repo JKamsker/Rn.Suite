@@ -131,6 +131,13 @@ namespace Rnd.IO.Extensions
             return fileInfo;
         }
 
+        public static FileInfo MoveTo(this FileInfo fileInfo, FileInfo targetFile)
+        {
+            fileInfo.MoveTo(targetFile.FullName);
+            return targetFile;
+        }
+
+
         public static FileInfo AsFileInfo(this string path)
         {
             return new FileInfo(path);
