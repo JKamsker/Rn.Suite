@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Rnd.Lib.Utils
 {
+
     public class FuncEqualityComparer<T> : IEqualityComparer<T>
     {
         Func<T, T, bool> _comparer;
